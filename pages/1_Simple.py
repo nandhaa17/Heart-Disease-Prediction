@@ -86,10 +86,8 @@ try:
     df=pd.read_csv('heart.csv')
     from sklearn.model_selection import train_test_split
     x=pd.DataFrame({'age':df['age'],'sex':df['sex'],'cp':df['cp'],'chol':df['chol'],'thalach':df['thalach'],'exang':df['exang'],'oldpeak':df['oldpeak'],'slope':df['slope'],'ca':df['ca'],'thal':df['thal']})
-    print(x)
-
+    
     y=df.iloc[:,13]
-    print(y)
 
     inp=pd.DataFrame(temp,index=[0])
 
@@ -97,9 +95,9 @@ try:
 
     # Aplying machie learning algorithm
 
-    from sklearn.naive_bayes import GaussianNB
-    gnb=GaussianNB()
-    gnb.fit(x_train,y_train.values.ravel())
+    # from sklearn.naive_bayes import GaussianNB
+    # gnb=GaussianNB()
+    # gnb.fit(x_train,y_train.values.ravel())
 
     from sklearn.ensemble import RandomForestClassifier
     rfc=RandomForestClassifier()
