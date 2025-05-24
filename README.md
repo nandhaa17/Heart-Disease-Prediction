@@ -11,3 +11,5 @@ To run the model, execute the command in your terminal that works.
 "py -m streamlit run 2_Advanced.py"
 
 Give all the expected inputs and check your heart's health
+
+visit https://nandha-heart-disease-prediction.streamlit.app
